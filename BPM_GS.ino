@@ -23,7 +23,7 @@ EspMQTTClient client{
 const int pinoPotenciometro = 32; // Pino do potenciômetro
 int batimentosCardiacos = 0;
 
-void onConnectionEstablished(){
+void onConnectionEstablished(){ // Função chamada quando a conexão é estabelecida
 
 }
 
@@ -37,7 +37,7 @@ void setup() {
     }
 
     Serial.println("Conectando ao wifi");
-    while (!client.isWifiConnected()) {
+    while (!client.isWifiConnected()) { // Loop de tentativa de conexão WiFi
         Serial.print('.');
         client.loop();
         delay(1000);
@@ -52,7 +52,7 @@ void loop() {
     // Convertendo o valor do potenciômetro para batimentos cardíacos simulados
     batimentosCardiacos = map(valorPotenciometro, 0, 1023, 60, 150); // Mapeia o valor do potenciômetro para a faixa de batimentos cardíacos (60 a 150 bpm)
 
-    Serial.print("Batimentos Cardíacos: ");
+    Serial.print("Batimentos Cardíacos: "); // Exibição dos batimentos cardíacos no terminal serial
     Serial.println(batimentosCardiacos);
 
     char bufferJson[100];
