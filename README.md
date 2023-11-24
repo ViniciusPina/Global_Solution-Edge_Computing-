@@ -2,6 +2,8 @@
 Autores: Vinicius Pina Rm 550986 , Felipe Hideki Rm98323
 Link da simulação: https://wokwi.com/projects/382143837686402049
 
+Link do video no youtube: https://www.youtube.com/watch?v=N5hoXfRDdLU
+
 Problema de Saúde Abordado:
 O projeto parece abordar a monitorização dos batimentos cardíacos. Ao ler um valor de um potenciômetro (simulando uma medição cardíaca), 
 converte esse valor em batimentos cardíacos simulados (60 a 150 bpm) e envia esses dados para a plataforma Tago.io.
