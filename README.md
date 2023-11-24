@@ -5,8 +5,8 @@ Link da simulação: https://wokwi.com/projects/382143837686402049
 Link do video no youtube: https://www.youtube.com/watch?v=N5hoXfRDdLU
 
 Problema de Saúde Abordado:
-O projeto parece abordar a monitorização dos batimentos cardíacos. Ao ler um valor de um potenciômetro (simulando uma medição cardíaca), 
-converte esse valor em batimentos cardíacos simulados (60 a 150 bpm) e envia esses dados para a plataforma Tago.io.
+O projeto  aborda a monitorização dos batimentos cardíacos. Ao ler um valor de um potenciômetro (simulando uma medição cardíaca), 
+e envia esses dados para a plataforma Tago.io.
 Essa informação pode ser usada para monitorar e analisar a frequência cardíaca, 
 o que é crucial para identificar possíveis problemas cardíacos ou para monitorar a saúde cardiovascular em geral.
 
@@ -20,6 +20,7 @@ Usa a biblioteca ArduinoJson para manipular os dados em formato JSON.
 Usa EspMQTTClient para estabelecer a conexão MQTT e enviar dados para o servidor.
 Utiliza a biblioteca Adafruit_SSD1306 para controlar o display OLED.
 Configuração e Execução:
+
 Configuração de Hardware:
 
 Conecte o potenciômetro ao pino definido (pinoPotenciometro).
